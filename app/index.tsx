@@ -15,7 +15,15 @@ export default function Index() {
 
         <Link href="/test" asChild>
           <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Open JS test page</Text>
+            <Text style={styles.buttonText}>Open test page</Text>
+          </Pressable>
+        </Link>
+
+        <View style={{ height: 12 }} />
+
+        <Link href="/auth" asChild>
+          <Pressable style={styles.buttonAlt}>
+            <Text style={styles.buttonTextAlt}>Open Auth (Register / Login)</Text>
           </Pressable>
         </Link>
       </View>
@@ -64,6 +72,19 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: "white",
+    fontWeight: "600",
+  },
+  buttonAlt: {
+    backgroundColor: "#fff",
+    borderColor: "#007AFF",
+    borderWidth: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    borderRadius: 8,
+    alignSelf: "flex-start",
+  },
+  buttonTextAlt: {
+    color: "#007AFF",
     fontWeight: "600",
   },
 });

@@ -1,13 +1,14 @@
 import { Link } from 'expo-router';
+import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function TestPage() {
+const TestPage: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>JS Test Page</Text>
+      <Text style={styles.title}>JS Test Page (now TSX)</Text>
       <Text style={styles.text}>
-        This page is written in plain JavaScript (no TypeScript). It verifies
-        that JS pages work alongside TS in this Expo Router app.
+        This page was converted to TypeScript (TSX). It verifies that Expo
+        Router can render TypeScript pages alongside the rest of the app.
       </Text>
 
       <Link href="/" asChild>
@@ -17,7 +18,7 @@ export default function TestPage() {
       </Link>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -50,3 +51,5 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
+export default TestPage;
