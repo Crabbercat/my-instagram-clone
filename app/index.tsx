@@ -9,8 +9,8 @@ export default function Index() {
       <View style={styles.card}>
         <Text style={styles.cardTitle}>Welcome</Text>
         <Text style={styles.cardText} numberOfLines={3}>
-          This is a small demo home screen. Use the button below to open a
-          JavaScript-only page (test) to verify mixing JS and TS works.
+          This is a small demo home screen. Use the button below to open the
+          test page or the auth screens.
         </Text>
 
         <Link href="/test" asChild>
